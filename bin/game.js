@@ -27,9 +27,9 @@ const nft = new Entity('nft')
 engine.addEntity(nft)
 nft.setParent(_scene)
 const transform3 = new Transform({
-  position: new Vector3(8, 1.5, 2),
+  position: new Vector3(8.5, 2, 2.5),
   rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(2, 2, 1)
+  scale: new Vector3(1, 1, 1)
 })
 nft.addComponentOrReplace(transform3)
 const nftShape = new NFTShape("ethereum://0x60f80121c31a0d46b5279700f9df786054aa5ee5/1060911")
