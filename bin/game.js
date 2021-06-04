@@ -27,7 +27,7 @@ const nft = new Entity('nft')
 engine.addEntity(nft)
 nft.setParent(_scene)
 const transform3 = new Transform({
-  position: new Vector3(4.5, 4, 3.5),
+  position: new Vector3(6.5, 4, 4.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(2.25, 2.25, 1)
 })
