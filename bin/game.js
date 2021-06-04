@@ -43,7 +43,7 @@ const nft2 = new Entity('nft2')
 engine.addEntity(nft2)
 nft2.setParent(_scene)
 const transform4 = new Transform({
-  position: new Vector3(7.5, 1.5, 6.5),
+  position: new Vector3(7, 1.5, 7.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -54,3 +54,33 @@ nftShape2.isPointerBlocker = true
 nftShape2.visible = true
 nftShape2.color = {"r":0.6404918,"g":0.611472,"b":0.8584906}
 nft2.addComponentOrReplace(nftShape2)
+
+const lightYellowSycamoreTree = new Entity('lightYellowSycamoreTree')
+engine.addEntity(lightYellowSycamoreTree)
+lightYellowSycamoreTree.setParent(_scene)
+const transform5 = new Transform({
+  position: new Vector3(12.5, 0, 4),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+lightYellowSycamoreTree.addComponentOrReplace(transform5)
+const gltfShape2 = new GLTFShape("models/TreeSycamore_02/TreeSycamore_02.glb")
+gltfShape2.withCollisions = true
+gltfShape2.isPointerBlocker = true
+gltfShape2.visible = true
+lightYellowSycamoreTree.addComponentOrReplace(gltfShape2)
+
+const smoothLog = new Entity('smoothLog')
+engine.addEntity(smoothLog)
+smoothLog.setParent(_scene)
+const transform6 = new Transform({
+  position: new Vector3(15, 0, 13),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+smoothLog.addComponentOrReplace(transform6)
+const gltfShape3 = new GLTFShape("models/Log_01/Log_01.glb")
+gltfShape3.withCollisions = true
+gltfShape3.isPointerBlocker = true
+gltfShape3.visible = true
+smoothLog.addComponentOrReplace(gltfShape3)
